@@ -20,6 +20,7 @@ COPY --from=tools --chmod=0755 /tools/flarectl /usr/local/bin/flarectl
 RUN apk add --no-cache \
         python3 \
         py3-pip \
+        jq \
     && pip3 install --upgrade pip \
     && pip3 install --no-cache-dir \
         awscli \
